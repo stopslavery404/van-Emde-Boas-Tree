@@ -3,7 +3,7 @@ from math import ceil, log2, sqrt
 
 class VEB:
     def high(self, x):
-        return x // int(sqrt(self.u))
+        return x >>(self.w//2)
 
     def low(self, x):
         return (x & (1 << (self.w // 2)) - 1)
